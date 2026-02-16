@@ -23,10 +23,6 @@ a{
 } 
 
 body{
- /* background-image: url(assets/1.png);*/
- /* background-size: 80vw;
-  background-repeat: no-repeat; */
- /* width: 80%;*/
   margin: 0 auto;
   box-shadow: 2px 2px 10px #999999;
 }
@@ -116,8 +112,7 @@ h3{
   text-align: justify;
 }
 
-.education_contact,
-.workplace{
+.content{
   display: flex;
   justify-content: space-between;
 /*  margin-right: 13%;*/
@@ -129,15 +124,25 @@ h3{
 }
 
 .contact__list li{
-  margin-bottom: 7%;
+  margin-bottom: 3%;
+  
 }
 
+.contact__list_item{
+  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1%;
+  padding: 5px;
+
+  background-color: #d5dee6;
+}
 .years{
   font-weight: bold;
 }
 
 .skills_example h3,
-.english h3,
 .experience h3{
   text-align: center;
   width: 15rem;
@@ -150,11 +155,11 @@ h3{
   margin-left: 0;
 }
 
-.skills_list{
+/*.skills_list{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
+}*/
 
 .skills_list li{
   align-self: center;
