@@ -119,13 +119,9 @@ h3{
   font-size: 1.2em;
 }
 
-.education_contact li{
-  margin-bottom: 3%;
-}
-
+.education li,
 .contact__list li{
   margin-bottom: 3%;
-  
 }
 
 .contact__list_item{
@@ -135,11 +131,16 @@ h3{
   align-items: center;
   margin-right: 1%;
   padding: 5px;
-
   background-color: #d5dee6;
 }
-.years{
+
+.education__name{
   font-weight: bold;
+}
+
+.education__major,
+.education_year{
+  font-size: 0.7em;
 }
 
 .skills_example h3,
