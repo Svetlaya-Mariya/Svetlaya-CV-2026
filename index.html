@@ -3,6 +3,7 @@
     <head>
         <title>CV</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,23 +11,28 @@
     </head>
     <body>
         <div class="start_screen">
-        <header class="wrapper">
-            <div class="main_border">
-            </div>
-            <div class="photo">
-                <img class="me" src="assets/my-photo-2024.jpg" alt="My photo">
-            </div>
-            <section class="name">
-                <h2>MARIYA SVETLAYA</h2>
-                <p>Junior Front-End Developer</p>
-                <div class="about">
-                    <p>I would like to become a part of a friendly and professional team, where i could develop my skills in HTML layout and JS programming, and also achieve team results and create interesting and useful applications for poeple. </p>
+            <header class="wrapper header">
+                <div class="photo">
+                    <img class="me" src="assets/my-photo-2024.jpg" alt="My photo">
                 </div>
-            </section>
+                <section class="name lang_eng">
+                    <h2>MARIYA SVETLAYA</h2>
+                    <p>Junior Front-End Developer</p>
+                    <div class="about">
+                        <p>I would like to become a part of a friendly and professional team, where i could develop my skills in HTML layout and JS programming, and also achieve team results and create interesting and useful applications for poeple. </p>
+                    </div>
+                </section>
+                <section class="name lang_rus">
+                    <h2>МАРИЯ СВЕТЛАЯ</h2>
+                    <p>Junior Front-End Developer</p>
+                    <div class="about">
+                        <p>Я бы хотела стать частью дружной и профессиональной команды, в котороя я могла бы развивать мои навыки в HTML-верстке и программировании на языке JavaScript, а так же создавать интересные и полезные Web-приложения.</p>
+                    </div>
+                </section>
         </header>
         </div>
         <main>
-            <div class="content wrapper">
+            <div class="wrapper content">
             <section class="content__left">
                 <nav class="contacts">
                     <h3>My contacts:</h3>
@@ -73,7 +79,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="education">
+                <div class="education lang_eng">
                     <h3>Education:</h3>
                         <ul>
                             <li>
@@ -84,6 +90,31 @@
                             <li>
                                 <p class="education__name">Francisk Scorina GSU</p>
                                 <p class="education__major">Advanced training institute, web-design and computer graphics</p>
+                                <span class="education_year">2019-2020</span>
+                            </li>
+                            <li>
+                                <p class="education__name">EPAM training center</p>
+                                <p class="education__major">Front-End Development</p>
+                                <span class="education_year">2020-2021</span>
+                            </li>
+                            <li>
+                                <p  class="education__name">EPAM training center</p>
+                                <p  class="education__major">Front-End Lab</p>
+                                <span class="education_year">2021</span>
+                            </li>
+                        </ul>
+                </div>
+                <div class="education lang_rus">
+                    <h3>Education:</h3>
+                        <ul>
+                            <li>
+                                <p class="education__name">ГГУ имени Ф. Скорины</p>
+                                <p  class="education__major">Математический факультет, прикладная математика</p>
+                                <span class="education_year">2005-2010</span>
+                            </li>
+                            <li>
+                                <p class="education__name">ГГУ имени Ф. Скорины</p>
+                                <p class="education__major">Институт повышения квалификации, Web-дизайн и компьютерная графика</p>
                                 <span class="education_year">2019-2020</span>
                             </li>
                             <li>
@@ -110,16 +141,16 @@
                         <li>CorelDraw</li>
                     </ul>
                 </div>
-                <div class="english">
+                <div>
                     <h3>English:</h3>
-                     EPAM English test result: <mark>A2</mark>
+                     <p>EPAM English test result: <mark>A2</mark></p>
                   <!-- <p>
                         I can tell about myself and keep up the conversation in English with non-native speaker. I try to watch movies, TV shows and read articles in English.
                     </p>--> 
                 </div>
             </section>
             <section class="content__right">
-                <div class="experience">
+                <div class="experience lang_eng">
                     <h3>Work experience</h3>
                     <div>
                         <div class="experience__item">
@@ -142,21 +173,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="examples">
-                    <h3>Work Example</h3>
-                    <div class="popup__container popup_hidden">
-                        <div class="popup">
-                            <div class="popup__close">
-                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-                            </div>
-                            <div class="popup__content">
-                                <h6 class="name">Name</h6>
-                                <p class="discription">discription</p>
-                            </div>
+                <div class="experience lang_rus">
+                    <h3>Work experience</h3>
+                    <div>
+                        <div class="experience__item">
+                            <p class="years">2010 - 2012</p>
+                            <p>Гомельский государственный областной Дворец творчества детей и молодежи</p>
+                            <p>Педагог дополнительного образования</p>
+                            <p>Преподавала детям от 4 до 14 лет основ компьютерных технологий и программ</p>
+                        </div>
+                        <div class="experience__item">
+                            <p class="years">2013 - 2014</p>
+                            <p>Могилевский районный центр социального обслуживания населения</p>
+                            <p>Специалист по автоматизации</p>
+                            <p>Обеспечивала работу компьютерной техники и периферийных  устройств</p>
+                        </div>
+                        <div class="experience__item">
+                            <p class="years">2024 - 2026</p>
+                            <p>ООО Ценрт управления информационными ресурсами "ЦВР-Октябрьский"</p>
+                            <p>Контент-редактор</p>
+                            <p>Информационная поддержка сайтов. Размещение текстов, изображение, файлов, внесение настроек CMS, обработка графических файлов</p>
                         </div>
                     </div>
+                </div>
+                <div class="examples">
+                    <h3>Work Example</h3>
                     <ul class="example__wrapper">                       
-                        `<li class="example">
+                        <li class="example">
                             <a href="https://svetlaya-mariya.github.io/library/" target="_blank" class="example_link">
                                 <img class="example__image" src="assets/task/library.png" alt="picture">
                                 <h4>Library</h4>
@@ -188,8 +231,8 @@
                         </li>
                     </ul>
                 </div>
-                
                 </section>
+                </div>
         </main>
         <script src="https://use.fontawesome.com/e61d0fb022.js"></script>
         <script src="script.js"></script>
