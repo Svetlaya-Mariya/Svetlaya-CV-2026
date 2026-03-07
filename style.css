@@ -25,6 +25,30 @@ h1{
   padding-bottom: 1em;
 }
 
+.lenguage {
+  font-weight: 700;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.lenguage > ul {
+  display: flex;
+}
+
+.lenguage > ul > li {
+ margin: 10px;
+}
+
+.lenguage > ul > li:hover {
+  cursor: pointer;
+}
+
+.lang_rus{
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+}
+
 .header{
   padding: 5% 0 0;
   display: flex;
@@ -252,7 +276,11 @@ h3{
 }
 }
 
-.lang_rus{
+.hidden{
   display: none;
 }
 
+.font_rus{
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+}
