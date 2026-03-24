@@ -27,17 +27,27 @@ h1{
 
 .lenguage {
   font-weight: 700;
-  position: absolute;
-  top: 20px;
-  right: 20px;
 }
 
 .lenguage > ul {
   display: flex;
+  justify-content: flex-end;
 }
 
 .lenguage > ul > li {
- margin: 10px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .lenguage > ul > li {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .lenguage > ul > li {
+    margin: 5px;
+  }
 }
 
 .lenguage > ul > li:hover {
@@ -50,7 +60,6 @@ h1{
 }
 
 .header{
-  padding: 5% 0 0;
   display: flex;
   justify-content: space-around;
   font-size: 2em;
@@ -92,11 +101,12 @@ h3{
   }
 
   p, li{
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   h3, h2{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 1vh 0;
   }
 
  .main_border{
@@ -110,11 +120,12 @@ h3{
   }
 
   p, li{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 
   h3, h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin: 1vh 0;
   }
 }
 
@@ -193,6 +204,10 @@ h3{
   background-color: #d5dee6;
 }
 
+.image__discord {
+    width: 20px;
+  }
+
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .contact__list_item{
     width: auto;
@@ -203,9 +218,23 @@ h3{
   .contacts{
     width: 16vw;
   } 
+
+  .image__discord {
+    width: 8px;
+  }
 }
 
 @media screen and (max-width: 767.9px) {
+  .contact__list_item{
+    width: auto;
+    margin-right: 0;
+    background-color: #ffffff;
+  }
+
+  .image__discord {
+    width: 8px;
+  }
+
   .content__left,
   .photo{
     border: none;
