@@ -194,8 +194,8 @@ h3{
   margin-bottom: 3%;
 }
 
-.contact__list_item{
-  width: 20px;
+.contact__list_item {
+  width: 30px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -204,9 +204,6 @@ h3{
   background-color: #d5dee6;
 }
 
-.image__discord {
-    width: 20px;
-  }
 
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .contact__list_item{
