@@ -106,6 +106,7 @@ h3{
 
   h3, h2{
     font-size: 1.2rem;
+    margin: 1vh 0;
   }
 
  .main_border{
@@ -124,6 +125,7 @@ h3{
 
   h3, h2 {
     font-size: 1rem;
+    margin: 1vh 0;
   }
 }
 
@@ -202,6 +204,10 @@ h3{
   background-color: #d5dee6;
 }
 
+.image__discord {
+  width: 12px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .contact__list_item{
     width: auto;
@@ -212,13 +218,21 @@ h3{
   .contacts{
     width: 16vw;
   } 
+
+  .image__discord {
+    width: 8px;
+  }
 }
 
 @media screen and (max-width: 767.9px) {
-    .contact__list_item{
+  .contact__list_item{
     width: auto;
     margin-right: 0;
     background-color: #ffffff;
+  }
+
+  .image__discord {
+    width: 8px;
   }
 
   .content__left,
